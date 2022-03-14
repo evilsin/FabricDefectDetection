@@ -1,4 +1,5 @@
-织布匹表面瑕疵识别系统
+**织布匹表面瑕疵识别系统**
+
 作品演示： 
      ![image](https://user-images.githubusercontent.com/30195788/158136535-4fb91aa3-4409-4c73-801c-76dac9f3edc5.png)
      图1目标检测结果
