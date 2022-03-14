@@ -1,9 +1,11 @@
 **织布匹表面瑕疵识别系统**
 
-作品演示： 
-     ![image](https://user-images.githubusercontent.com/30195788/158136535-4fb91aa3-4409-4c73-801c-76dac9f3edc5.png)
-     图1目标检测结果
- ![image](https://user-images.githubusercontent.com/30195788/158136553-7126a374-dcd7-415e-bc4a-42413b69346c.png)
+作品演示：
+
+![image](https://user-images.githubusercontent.com/30195788/158136535-4fb91aa3-4409-4c73-801c-76dac9f3edc5.png)
+    
+ 图1目标检测结果
+![image](https://user-images.githubusercontent.com/30195788/158136553-7126a374-dcd7-415e-bc4a-42413b69346c.png)
 图2瑕疵分类结果
 注：QT:其他瑕疵  YW：油污
 作品简介：
