@@ -4,8 +4,9 @@
 
 ![image](https://user-images.githubusercontent.com/30195788/158136535-4fb91aa3-4409-4c73-801c-76dac9f3edc5.png)
     
- 图1目标检测结果
+图1目标检测结果
 ![image](https://user-images.githubusercontent.com/30195788/158136553-7126a374-dcd7-415e-bc4a-42413b69346c.png)
+
 图2瑕疵分类结果
 注：QT:其他瑕疵  YW：油污
 作品简介：
@@ -26,10 +27,6 @@
 
 （4）数据挖掘
 数据挖掘可以从大量的、模糊的实际数据中提取隐含其内的、人们实现所不知的，但又有潜在价值的信息和知识。本系统自动对每次布匹瑕疵识别的结果进行记录，保存至数据库中。数据挖掘模块将对记录信息进行大数据统计和可视化分析，从产品类别、产品规格、织机类别和瑕疵类型等方面挖掘重要的能够反映生产现状的信息，以支持决策者或技术人员作出有效的解决方案。
-
-
-
-
 
 安装说明：
 1.	程序核心组件
@@ -66,18 +63,29 @@ Numpy1.16.3
 3）软件使用
 打开浏览器，输入 http://127.0.0.1:8000/index.html进入起始界面。
 演示效果：
+
 ![image](https://user-images.githubusercontent.com/30195788/158136638-d3b7cdee-404c-44a0-8711-2eccf1d75965.png)
- 
+
 图3慧眼系统首页
-       ![image](https://user-images.githubusercontent.com/30195788/158136660-ac319863-0262-4b71-8ad5-26826ea7a093.png)
+
+![image](https://user-images.githubusercontent.com/30195788/158136660-ac319863-0262-4b71-8ad5-26826ea7a093.png)
+       
 图4在线打标界面
- ![image](https://user-images.githubusercontent.com/30195788/158136686-e17c6751-b1de-4ec5-843e-48133ee39276.png)
+
+![image](https://user-images.githubusercontent.com/30195788/158136686-e17c6751-b1de-4ec5-843e-48133ee39276.png)
+
 图5在线打标选择界面
+
 ![image](https://user-images.githubusercontent.com/30195788/158136728-ffb1153c-03d4-41cc-861c-b6ebaad4b129.png)
+
 图6瑕疵样例及解释
+
 ![image](https://user-images.githubusercontent.com/30195788/158136763-d5368d1d-7fc8-4458-97be-bb5631b7b4b3.png)
+
 图7选择待检图像
+
 ![image](https://user-images.githubusercontent.com/30195788/158136795-e25689a7-422c-4ffb-ad43-8a7a912e2442.png)
+
 图8瑕疵识别结果
 
 设计思路：
