@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html>
+
+        <head>
+            <meta charset="UTF-8">
+            <title></title>
+            <link rel="stylesheet" type="text/css" href="layui/css/layui.css" />
+            <link rel="stylesheet" type="text/css" href="usteel-search/search.css" />
+
+
+            <!-- Load normalize css -->
+            <link rel='stylesheet' type='text/css' href='../css/normalize.css' />
+            <!-- Load css -->
+            <link rel='stylesheet' type='text/css' href='../css/foundation.min.css' />
+            <link rel='stylesheet' type='text/css' href='../css/new2.css' />
+
+
+            <!-- Load webfonts -->
+            <link rel='stylesheet' href='css/stylesheet1.css' type='text/css' media='all'>
+
+            <!-- Custom styles for this template -->
+            <link href="../css/style.css" rel="stylesheet">
+            <link rel="stylesheet" href="../css/main.css">
+
+            <link href="../css/bootstrap-reset.css" rel="stylesheet">
+
+            <link href="../css/font-awesome.css" rel="stylesheet">
+            <link href="../css/font-awesome.min.css" rel="stylesheet">
+
+        </head>
+
+<body style="zoom: 0.8">
+<div class="usteel-content w">
+    <div class="usteel-condition" id="usteel-condition">
+        <div class="selector">
+            <div class="usteel-search" data-type="area">
+                <div class="sl-key">
+                    <strong>人数</strong>
+                </div>
+                <div class="sl-value">
+                    <div class="sl-v-list">
+                        <ul>
+                            <li data_id="110000">
+                                <a >
+                                    <input type="checkbox">
+                                    <i class=""></i><span>20人以下</span>
+                                </a>
+                            </li>
+                            <li data_id="120000">
+                                <a >
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <i class=""></i><span>10人~50人以下</span>
+                                </a>
+                            </li>
+                            <li data_id="150000">
+                                <a >
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <i class=""></i><span>50人~100人</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sl-btns">
+                        <a class="btn btn-primary disabled">确定</a>
+                        <a  class="btn btn-default">取消</a>
+                    </div>
+                </div>
+                <div class="sl-ext">
+                    <a  class="sl-b-more" style="visibility: hidden;"><i class="layui-icon layui-icon-down"></i>更多</a>
+                    <a  class="sl-b-multiple"><i class="layui-icon layui-icon-add-1"></i>多选</a>
+                </div>
+            </div>
+            <div class="usteel-search" data-type="variety">
+                <div class="sl-key">
+                    <strong>有无空调</strong>
+                </div>
+                <div class="sl-value">
+                    <div class="sl-v-list">
+                        <ul>
+                            <li data_id="1">
+                                <a>
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <i class=""></i><span>有</span>
+                                </a>
+                            </li>
+                            <li data_id="3">
+                                <a >
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <i class=""></i><span>无</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sl-btns">
+                        <a href="Javascript:" class="btn btn-primary disabled">确定</a>
+                        <a href="Javascript:" class="btn btn-default">取消</a>
+                    </div>
+                </div>
+                <div class="sl-ext">
+                    <a  class="sl-b-more" style="visibility: hidden;"><i class="layui-icon layui-icon-down"></i>更多</a>
+                    <a  class="sl-b-multiple"><i class="layui-icon layui-icon-add-1"></i>多选</a>
+                </div>
+            </div>
+            <div class="usteel-search" data-type="standard">
+                <div class="sl-key">
+                    <strong>设备</strong>
+                </div>
+                <div class="sl-value">
+                    <div class="sl-v-list">
+                        <ul>
+                            <li data_id="1">
+                                <a>
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <i class=""></i><span class="">白板</span>
+                                </a>
+                            </li>
+                            <li data_id="2">
+                                <a >
+                                    <label>
+                                        <input type="checkbox">
+                                    </label>
+                                    <i class=""></i><span class="">投影仪</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sl-btns">
+                        <a href="Javascript:" class="btn btn-primary disabled">确定</a>
+                        <a href="Javascript:" class="btn btn-default">取消</a>
+                    </div>
+                </div>
+                <div class="sl-ext">
+                    <a class="sl-b-more" style="visibility: hidden;"><i class="layui-icon layui-icon-down"></i>更多</a>
+                    <a  class="sl-b-multiple"><i class="layui-icon layui-icon-add-1"></i>多选</a>
+                </div>
+            </div>
+            <div class="search-bottom display-flex">
+
+
+                <p class="display-flex">
+                    <a href="index.html"  class="_reset">重置</a>
+                    <a href="index2.html" class="_search">搜索</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="usteel-table">
+        <p class="title">
+            <span>全部结果&gt;</span>
+            <strong data_val="material=9">20人以下<i class="layui-icon layui-icon-close"></i></strong>
+            <strong data_val="standard=7">投影仪<i class="layui-icon layui-icon-close"></i></strong>
+
+        </p>
+
+        <section>
+            <p class="t_th">
+                <span>会议室编号</span>
+                <span>会场规模</span>
+                <span>硬件设施</span>
+            </p>
+            <a class="t_tr" href="javascript:" data-toggle="modal" data-target="#confirmModal">
+                <span class="w-1">A102</span>
+                <span class="w-1">20人以下</span>
+                <span class="w-1">投影仪</span>
+
+            </a>
+            <a class="t_tr" >
+                <span class="w-1">A219</span>
+                <span class="w-1">20人以下</span>
+                <span class="w-1">投影仪、空调</span>
+
+
+            </a>
+            <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true" >
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span
+                                    aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title" id="myModalLabel">预定会议室</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="text_box">
+                                <form class="layui-form" action="">
+                                    <div class="layui-form-item"><label for="text_book" class="layui-form-label">会议主题</label><div class="layui-input-block"><input type="text" name="title1" id="text_book" required  lay-verify="required" placeholder="请输入会议主题" autocomplete="off" class="layui-input"></div></div>
+                                    <div class="layui-form-item"><label  class="layui-form-label">预定时间</label><div class="layui-input-block">
+                                        <div class="input-group date">
+                                            <input type="text" class="form-control" id="datetimepicker6" placeholder="开始时间"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                            <input type="text" class="form-control" style="margin-left:4px;" id="datetimepicker7" placeholder="结束时间"><span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        </div></div></div>
+                                    <div class="layui-form-item"><label for="canhuipeople" class="layui-form-label">参会人员</label><div class="layui-input-block"><input type="text" name="title1" id="canhuipeople" required  lay-verify="required" placeholder="请输入参会人员" autocomplete="off" class="layui-input"></div></div>
+                                    <div class="layui-form-item"><label  class="layui-form-label">会场需要</label><div class="layui-input-block">
+                                        <input type="radio" name="canhuineed" value="白板" title=""  >白板
+                                        <input type="radio" name="canhuineed" value="投影仪" title="" checked>投影仪
+                                        <input type="radio" name="canhuineed" value="空调" title="" >空调
+                                    </div></div>
+                                    <div class="layui-form-item"><label class="layui-form-label">参会人数</label><div class="layui-input-block">
+                                        <input type="radio" name="canhuinum" value="20" title="" checked>20人以下
+                                        <input type="radio" name="canhuinum" value="50" title="" >10人~50人以下
+
+                                        <input type="radio" name="canhuinum" value="100" title="">50人~100人
+                                    </div></div>
+                                    <div class="layui-form-item"><label class="layui-form-label">智能匹配</label><div class="layui-input-block">
+                                        <select name="interest" lay-filter="aihao">
+                                            <option value="0">A102</option>
+                                        </select>
+                                    </div></div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="login.html" class="btn btn-primary">确认</a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <center id="page" class="page"></center>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="layui/layui.js" charset="utf-8"></script>
+<script type="text/javascript">
+    layui.use(['form', 'layedit', 'laydate', 'carousel', 'element', 'laypage'], function() {
+        var layer = layui.layer,
+            laypage = layui.laypage,
+            element = layui.element;
+
+        laypage.render({
+            elem: 'page',
+            count: 1,
+            layout: ['page', 'limit', 'skip', 'count', ],
+            theme: '#3e88f5',
+            curr: "1" //获取起始页
+            ,
+            limit: "10",
+            jump: function(obj, first) {
+                //obj包含了当前分页的所有参数，比如：
+                //		    console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+                //		    console.log(obj.limit); //得到每页显示的条数
+                //首次不执行
+                if(!first) {
+                    //					var load = layer.load(2, {shade: [0.1,'#000']});
+                    locationHref("page=" + obj.curr + "&limit=" + obj.limit, "#usteel-condition", "page");
+                }
+            }
+        });
+    });
+</script>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/Chart.min.js"></script>
+<script src="../js/templatemo_script.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        $(".btnDetail").click(function () {
+            $.jq_Panel({
+                title: "会议室详情",
+                url: "MeetingDetail.html",
+                iframeWidth: 800,
+                iframeHeight: 600,
+            });
+        });
+    });
+
+
+    // Line chart
+    var randomScalingFactor = function () {
+        return Math.round(Math.random() * 100)
+    };
+    var lineChartData = {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [
+            {
+                label: "My First dataset",
+                fillColor: "rgba(220,220,220,0.2)",
+                strokeColor: "rgba(220,220,220,1)",
+                pointColor: "rgba(220,220,220,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(220,220,220,1)",
+                data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+            },
+            {
+                label: "My Second dataset",
+                fillColor: "rgba(151,187,205,0.2)",
+                strokeColor: "rgba(151,187,205,1)",
+                pointColor: "rgba(151,187,205,1)",
+                pointStrokeColor: "#fff",
+                pointHighlightFill: "#fff",
+                pointHighlightStroke: "rgba(151,187,205,1)",
+                data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+            }
+        ]
+
+    }
+
+    window.onload = function () {
+        var ctx_line = document.getElementById("templatemo-line-chart").getContext("2d");
+        window.myLine = new Chart(ctx_line).Line(lineChartData, {
+            responsive: true
+        });
+    };
+
+    $('#myTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+
+    $('#loading-example-btn').click(function () {
+        var btn = $(this);
+        btn.button('loading');
+        // $.ajax(...).always(function () {
+        //   btn.button('reset');
+        // });
+    });
+</script>
+
+<!--common script for all pages-->
+<script src="../js/new/common-scripts.js"></script>
+<script type="text/javascript" src="../myplugs/js/plugs.js"></script>
+
+</html></title>
+</head>
+<body>
+
+</body>
+</html>

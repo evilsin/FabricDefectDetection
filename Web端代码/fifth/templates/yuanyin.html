@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <title>首页</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/css/templatemo_main.css">
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-reset.css" rel="stylesheet">
+
+    <link href="/static/css/font-awesome.css" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+
+</head>
+<body class="has-js">
+<section id="container" class="">
+    <!--header start-->
+    <header class="header white-bg">
+        <div class="sidebar-toggle-box">
+            <div data-original-title="展开菜单" data-placement="right" class="icon-reorder tooltips"></div>
+        </div>
+        <!--logo start-->
+        <a href="#" class="logo"><span><b>智会</b></span></a>
+        <!--logo end-->
+
+        <div class="nav notify-row" id="top_menu">
+
+        </div>
+        <div class="top-nav ">
+            <!--search & user info start-->
+            <ul class="nav pull-right top-menu">
+                <li>
+                    <!-- <input type="text" class="form-control search" placeholder="Search"> -->
+                </li>
+                <!-- user login dropdown start-->
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                        <img class="headerImage" style="height:30px;width:30px;" src="/static/imgs/hh.png" alt="">
+
+
+                        <span class="username">侯晓妍</span>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu extended logout">
+                        <div class="log-arrow-up"></div>
+                        <li><a href=""><i class=" icon-envelope"></i>账号</a></li>
+                        <li><a href=""><i class="icon-key"></i> 密码</a></li>
+                        <li style="display:none"><a href=""><i class="icon-user"></i> 头像</a></li>
+                        <li><a href=""><i class="icon-signout"></i> 退出</a></li>
+                    </ul>
+                </li>
+                <!-- user login dropdown end -->
+            </ul>
+            <!--search & user info end-->
+        </div>
+
+    </header>
+    <!--header end-->
+    <!--<div class="navbar navbar-inverse" role="navigation">原头
+        <div class="navbar-header">
+          <div class="logo"><h2>智能会议室管理系统</h2></div>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>-->
+
+    <aside>
+        <div id="sidebar" class="nav-collapse">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu ">
+                <li class="sub-menu active">
+                    <a class="active" href="yuanyin.html">
+                        <i class="icon-laptop"></i>
+                        <span>首&nbsp;&nbsp;&nbsp;&nbsp;页</span>
+                    </a>
+                </li>
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-user"></i>
+                        <span>我的会议</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="today.html">今日会议</a></li>
+
+                    </ul>
+                </li>
+                <li class="sub-menu ">
+                    <a href="meeting.html" class="">
+                        <i class="fa fa-bank"></i>
+                        <span>会议室预览</span>
+                    </a>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-desktop"></i>
+                        <span>会议预定</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+                        <li ><a class="" href="yuding.html">时间预定</a></li>
+                        <li ><a class="" href="smart.html">智能预定</a></li>
+                        <li ><a class="" href="yu.html">预定统计</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="information.html" class="">
+                        <i class="fa fa-user"></i>
+                        <span>个人资料</span>
+                    </a>
+                </li>
+                <!-- <li><a href="login.html" ><i class="fa fa-sign-out"></i>退出系统</a>-->
+               <li>
+                   <a href="javascript:" data-toggle="modal" data-target="#confirmModal">
+                       <i class="fa fa-sign-out"></i><span>退出系统</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+
+    <!--<div class="navbar-collapse collapse templatemo-sidebar"  >原菜单
+    <ul class="templatemo-sidebar-menu">
+      <li>
+        <form class="navbar-form">
+          <input type="text" class="form-control" id="templatemo_search_box" placeholder="搜索...">
+          <span class="btn btn-default">前往</span>
+        </form>
+      </li>
+      <li class="active"><a href="#"><i class="fa fa-home"></i>首页</a></li>
+
+      <li><a href="yuding.html"><i class="fa fa-cubes"></i><span class="badge pull-right">9</span>预定会议室</a></li>
+      <li><a href="maps.html"><i class="fa fa-map-marker"></i><span class="badge pull-right">42</span>Maps</a></li>
+      <li><a href="tables.html"><i class="fa fa-users"></i><span class="badge pull-right">NEW</span>会议室情况</a></li>
+      <li><a href="information.html"><i class="fa fa-cog"></i>个人资料</a></li>
+      <li><a href="javascript:;" data-toggle="modal" data-target="#confirmModal"><i class="fa fa-sign-out"></i>退出</a></li>
+    </ul>
+  </div>/.navbar-collapse -->
+    <section id="main-content" >
+        <section class="wrapper">
+
+            <div class="template-page-wrapper">
+
+                <div class="templatemo-content-wrapper">
+
+                    <div class="templatemo-content">
+
+                        <div class="row state-overview">
+
+                            <div class="col-lg-3 col-sm-6">
+                                <section class="panel">
+                                    <div class="symbol terques">
+                                        <i class="icon-user"></i>
+                                    </div>
+                                    <div class="value btn-link-quick-meeting">
+                                        <a href="javascript:" data-toggle="modal" data-target="#confirmModal1">
+                                            <a href="today.html">
+                                                <h1>5</h1>
+                                                <p>即将参加</p>
+                                            </a>
+
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <section class="panel">
+                                    <div class="symbol red">
+                                        <i class="icon-tags"></i>
+                                    </div>
+                                    <div class="value">
+                                        <a href="javascript:" data-toggle="modal" data-target="#confirmModal2">
+                                            <h1>0</h1>
+                                            <p>我创建的</p>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <section class="panel">
+                                    <div class="symbol yellow">
+                                        <i class="icon-star"></i>
+                                    </div>
+                                    <div class="value">
+                                        <a href="javascript:" data-toggle="modal" data-target="#confirmModal3">
+                                            <h1>0</h1>
+                                            <p>已经参加</p>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6">
+                                <section class="panel">
+                                    <div class="symbol blue">
+                                        <i class="icon-th-list"></i>
+                                    </div>
+                                    <div class="value">
+                                        <a href="javascript:" data-toggle="modal" data-target="#confirmModal4">
+                                            <h1>0</h1>
+                                            <p>所有预定</p>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-lg-7">
+
+                                <!--work progress start-->
+                                <section class="panel">
+                                    <div class="panel-body  ">
+
+                                        <a class="task-thumb">
+                                            <img src="/static/imgs/45-智慧微场景.png" alt="" style="height:75px;width:75px;">
+                                        </a>
+
+                                        <div class="task-thumb-details">
+                                            <h1><a  href="meeting.html">所有会议室</a></h1>
+                                            <p>All Meeting Room</p>
+                                        </div>
+                                        <div class="task-option">
+
+                                        </div>
+                                    </div>
+                                    <table class="table table-hover personal-task">
+                                        <tbody>
+
+
+                                        <tr>
+                                            <td nowrap><a href="javascript:" data-toggle="modal" data-target="#confirmModal0">A102</a></td>
+                                            <td>
+
+
+                                                <span class='badge bg-info'>当前空闲</span>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td nowrap><a href="javascript:" data-toggle="modal" data-target="#confirmModal0">B211</a></td>
+                                            <td>
+
+                                                <span class='badge bg-info'>当前空闲</span>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td nowrap><a href="javascript:" data-toggle="modal" data-target="#confirmModal0">C108</a></td>
+                                            <td>
+
+
+                                                <span class='badge bg-info'>当前空闲</span>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td nowrap><a href="javascript:" data-toggle="modal" data-target="#confirmModal0">D212</a></td>
+                                            <td>
+
+
+                                                <span class='badge bg-info'>当前空闲</span>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td nowrap><a href="javascript:" data-toggle="modal" data-target="#confirmModal0">B219</a></td>
+                                            <td>
+
+
+                                                <span class='badge bg-info'>当前空闲</span>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td nowrap><a href="javascript:" data-toggle="modal" data-target="#confirmModal0">A103</a></td>
+                                            <td>
+
+
+                                                <span class='badge bg-info'>当前空闲</span>
+
+                                            </td>
+                                        </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </section>
+                                <!--work progress end-->
+                            </div>
+                            <div class="col-lg-5">
+                                <!--user info table start-->
+                                <section class="panel" >
+                                    <div class="panel-body" >
+                                        <a class="task-thumb" href="today.html">
+                                            <img class="headerImage" style="height:75px;width:75px;"
+                                                 src="/static/imgs/38-幸运积分签到.png" alt="">
+                                        </a>
+                                        <div class="task-thumb-details">
+                                            <h1><a href="today.html">侯晓妍</a></h1>
+                                            <p >今日会议</p>
+                                        </div>
+                                    </div>
+                                    <table class="table table-hover personal-task">
+                                        <tbody>
+                                        <div></div><!--用户今日会议显示-->
+                                        </tbody>
+                                    </table>
+                                </section>
+                                <!--user info table end-->
+                            </div>
+                        </div>
+
+                        <!-- 退出弹窗-->
+                        <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                             aria-hidden="true" >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span
+                                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel">你确认退出吗？</h4>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="login.html" class="btn btn-primary">是</a>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">否</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--会议室详情弹窗-->
+                        <div class="modal fade" id="confirmModal0" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                             aria-hidden="true" >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span
+                                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel0">会议室详情</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table table-hover personal-task1">
+                                            <tbody>
+                                            <tr>
+                                                <td nowrap><a >会议1</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议2</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议3</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议4</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议5</a></td>
+                                            </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--即将参加弹窗-->
+                        <div class="modal fade" id="confirmModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                             aria-hidden="true" >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span
+                                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel1">即将参加</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table table-hover personal-task1">
+                                            <tbody>
+                                            <tr>
+                                                <td nowrap><a >会议1</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议2</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议3</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议4</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议5</a></td>
+                                            </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--我创建的弹窗-->
+                        <div class="modal fade" id="confirmModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                             aria-hidden="true" >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span
+                                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel2">我创建的</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table table-hover personal-task1">
+                                            <tbody>
+                                            <tr>
+                                                <td nowrap><a >会议1</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议2</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议3</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议4</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议5</a></td>
+                                            </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--已参加的弹窗-->
+                        <div class="modal fade" id="confirmModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                             aria-hidden="true" >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span
+                                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel3">已参加的</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table table-hover personal-task1">
+                                            <tbody>
+                                            <tr>
+                                                <td nowrap><a >会议1</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议2</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议3</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议4</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议5</a></td>
+                                            </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--所有预定弹窗-->
+                        <div class="modal fade" id="confirmModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                             aria-hidden="true" >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"><span
+                                                aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                        <h4 class="modal-title" id="myModalLabel4">所有预定</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table class="table table-hover personal-task1">
+                                            <tbody>
+                                            <tr>
+                                                <td nowrap><a >会议1</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议2</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议3</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议4</a></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td nowrap><a >会议5</a></td>
+                                            </tr>
+
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <!--state overview end-->
+
+
+                </div>
+            </div>
+        </section>
+        <footer class="templatemo-footer">
+            <div class="templatemo-copyright">
+                <p>2018-2019智能会议室管理系统</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/Chart.min.js"></script>
+    <script src="/static/js/templatemo_script.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            $(".btnDetail").click(function () {
+                $.jq_Panel({
+                    title: "会议室详情",
+                    url: "MeetingDetail.html",
+                    iframeWidth: 800,
+                    iframeHeight: 600,
+                });
+            });
+        });
+
+
+        // Line chart
+        var randomScalingFactor = function () {
+            return Math.round(Math.random() * 100)
+        };
+        var lineChartData = {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [
+                {
+                    label: "My First dataset",
+                    fillColor: "rgba(220,220,220,0.2)",
+                    strokeColor: "rgba(220,220,220,1)",
+                    pointColor: "rgba(220,220,220,1)",
+                    pointStrokeColor: "#fff",
+                    pointHighlightFill: "#fff",
+                    pointHighlightStroke: "rgba(220,220,220,1)",
+                    data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+                },
+                {
+                    label: "My Second dataset",
+                    fillColor: "rgba(151,187,205,0.2)",
+                    strokeColor: "rgba(151,187,205,1)",
+                    pointColor: "rgba(151,187,205,1)",
+                    pointStrokeColor: "#fff",
+                    pointHighlightFill: "#fff",
+                    pointHighlightStroke: "rgba(151,187,205,1)",
+                    data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
+                }
+            ]
+
+        }
+
+        window.onload = function () {
+            var ctx_line = document.getElementById("templatemo-line-chart").getContext("2d");
+            window.myLine = new Chart(ctx_line).Line(lineChartData, {
+                responsive: true
+            });
+        };
+
+        $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+
+        $('#loading-example-btn').click(function () {
+            var btn = $(this);
+            btn.button('loading');
+            // $.ajax(...).always(function () {
+            //   btn.button('reset');
+            // });
+        });
+    </script>
+
+    <!--common script for all pages-->
+    <script src="/static/js/new/common-scripts.js"></script>
+    <script type="text/javascript" src="/static/myplugs/js/plugs.js"></script>
+
+
+</section>
+</body>
+</html>

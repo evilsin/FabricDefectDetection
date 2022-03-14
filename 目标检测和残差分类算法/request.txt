@@ -1,0 +1,11 @@
+Python3
+CUDA 8
+CuDNN 6
+Tensorflow 1.4.0
+Djgango2.2.2
+Anaconda3
+Opencv-python3.4.2.16
+Pymysql0.9.3
+Matplotlib3.1.0
+Pillow6.0.0
+Numpy1.16.3

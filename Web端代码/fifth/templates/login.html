@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav class="b_clear">
+        <div class="nav_logo l_float">
+            <img src="imgs/logo.jpg" alt="">
+        </div>
+        <div class="nav_link r_float">
+            <ul>
+                <!--<li><a href="#">返回首页</a></li>-->
+                <!--<li><a href="#">关于我们</a></li>-->
+                <!--<li><a href="#">联系我们</a></li>-->
+
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <div class="login_body l_clear">
+        <div class="login_form l_float">
+            <div class="login_top">
+                <img src="imgs/logo.jpg" alt="" class="">
+
+                <div class="login_tags b_clear">
+                    <button class="top_tag l_float active" onClick="PwdLogin()" type="button">密码登录</button>
+                    <button class="top_tag r_float" onClick="QrcodeLogin()" type="button">微信扫码登录</button>
+                </div>
+            </div>
+            <div class="login_con">
+                <form action="" method="POST">
+                    <div>
+                        <label for="user_name">用户名</label>
+                        <input type="text" name="" id="user_name" placeholder="账号/手机号/邮箱">
+                        <img src="imgs/icons/user.svg">
+                        <p class="tips hidden">请检查您的账号</p>
+                    </div>
+                    <div>
+                        <label for="user_pwd">密码</label>
+                        <input type="password" name="" id="user_pwd" placeholder="请输入账户密码">
+                        <img src="imgs/icons/lock.svg">
+                        <p class="tips hidden">请检查您的密码</p>
+                    </div>
+                    <div class="login-check">
+                        <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i> 记住密码</label>
+
+                    </div>
+                    <!--<div class="b_clear">-->
+                    <!--<label for="auth_code" class="b_clear">验证码</label>-->
+                    <!--<input type="text" name="" id="auth_code" placeholder="" class="l_float" maxlength="6">-->
+                    <!---->
+                    <!--<button class="auth_code l_float">获取验证码</button>-->
+                    <!--<img src="imgs/icons/auth_code.svg">-->
+                    <!--<p class="tips hidden">验证码错误</p>-->
+                    <!---->
+                    <!--</div>-->
+                    <div class="b_clear submit">
+                        <!--<div class="bottom">-->
+                        <!--<input type="submit" value="登  录" />-->
+                        <!--</div>-->
+
+                        <button type="submit"><a href="index.html" style="color:#ffffff">登&nbsp;&nbsp;录</a></button>
+                        <!--<a href="index.html">登录</a>-->
+                        <p class="tips hidden">登录失败，请检查您的账户与密码</p>
+                        <a href="#" class="r_float" style="color: #166bd7">忘记密码？</a>
+
+                    </div>
+
+
+                    <a href="admin.html" class="r_right" style="color: #1462c4">管理员入口</a>
+                </form>
+            </div>
+            <div class="login_con hidden">
+                <div class="qr_code">
+                    <img src="imgs/qr.png" alt="">
+                    <p>请使用微信扫码登录<br>仅支持已绑定微信的账户进行快速登录</p>
+                </div>
+
+            </div>
+            <div class="login_otherAccount">
+                <!--<span>第三方登录</span>-->
+                <!--<a href="http://"><img src="imgs/icons/wechat.svg" alt="微信登录"></a>-->
+                <!--<a href="http://"><img src="imgs/icons/weibo.svg" alt="微博登录"></a>-->
+                <!--<a href=""><img src="imgs/icons/qq.svg" alt="QQ登录"></a>-->
+            </div>
+
+        </div>
+        <div class="login_ad l_float" id="AdImg">
+            <!--<a href="">查看详情</a>-->
+        </div>
+    </div>
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>
+

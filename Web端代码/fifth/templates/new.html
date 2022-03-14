@@ -1,0 +1,638 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="shortcut icon" href="/static/imgs/logo.svg">
+    <title>Welcome</title>
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrapvalidator.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-reset.css" rel="stylesheet">
+    <link href="/static/css/jquery-editable-select.css" rel="stylesheet">
+    <link href="/static/css/city-picker.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/css/jquery-ui-1.10.1.custom.min.css">
+    <!--external css-->
+    <link href="/static/css/font-awesome.css" rel="stylesheet" />
+    <link href="/static/css/datepicker.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link href="/static/css/style-responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/css/main.css">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-fileupload.css" />
+    <link href="/static/css/toastr.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap-switch.min.css" />
+    <link href="/static/css/dropzone.min.css" rel="stylesheet"/>
+    <link href="/static/css/morris.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/css/datetimepicker.css">
+
+    <!--[if lt IE 9]>
+
+    <![endif]<script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>-->
+
+
+
+    <script>
+        function initPageScript(){
+        }
+    </script>
+</head>
+
+<body>
+<section id="container" class="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--header start-->
+    <header class="header white-bg">
+        <div class="sidebar-toggle-box">
+            <div data-original-title="展开菜单" data-placement="right" class="icon-reorder tooltips"></div>
+        </div>
+        <!--logo start-->
+
+        <a href="#" class="logo"><span><b>智能会议室管理系统</b></span></a>
+
+        <!--logo end-->
+
+        <div class="nav notify-row" id="top_menu">
+
+        </div>
+        <div class="top-nav ">
+            <!--search & user info start-->
+            <ul class="nav pull-right top-menu">
+                <li>
+                    <!-- <input type="text" class="form-control search" placeholder="Search"> -->
+                </li>
+                <!-- user login dropdown start-->
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                        <img class="headerImage" style="height:30px;width:30px;"  src="/static/imgs/hh.png"  >
+
+
+                        <span class="username">FTD</span>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu extended logout">
+                        <div class="log-arrow-up"></div>
+                        <li><a href=""><i class=" icon-envelope"></i>账号</a></li>
+                        <li><a href=""><i class="icon-key"></i> 密码</a></li>
+                        <li style="display:none"><a href=""><i class="icon-user"></i> 头像</a></li>
+                        <li><a href=""><i class="icon-signout"></i> 退出</a></li>
+                    </ul>
+                </li>
+                <!-- user login dropdown end -->
+            </ul>
+            <!--search & user info end-->
+        </div>
+
+    </header>
+    <!--header end-->
+
+
+
+
+
+    <aside>
+        <div id="sidebar" class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu">
+                <li class="sub-menu active">
+                    <a class="active" href="">
+                        <i class="icon-laptop"></i>
+                        <span>首&nbsp;&nbsp;&nbsp;&nbsp;页</span>
+                        <span class="arrow"></span>
+                    </a>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-user"></i>
+                        <span>我的会议</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/static/mymeeting/today">今日会议</a></li>
+
+                        <li ><a class="" href="/static/mymeeting/approval/t1">已通过会议</a></li>
+
+                        <li ><a class="" href="/static/mymeeting/approval/t2">已拒绝会议</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-desktop"></i>
+                        <span>会议管理</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/meeting/quickbooking">订会议室</a></li>
+
+                        <li ><a class="" href="/meeting/create">创建会议</a></li>
+
+                        <li ><a class="" href="/meeting/repeatCycleBooking">周期会议</a></li>
+
+                        <li ><a class="" href="/meeting/list">会议列表</a></li>
+
+                        <li ><a class="" href="/meeting/calendar">会议日历</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-video-camera"></i>
+                        <span>视频会议</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/virtualRooms/lobby">虚拟大厅</a></li>
+
+                        <li ><a class="" href="/virtualRooms/meetings">使用记录</a></li>
+
+                        <li ><a class="" href="/virtualRooms/list">虚拟房间</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-file-text"></i>
+                        <span>会议审批</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/meeting/waitapproval">待审会议</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-users"></i>
+                        <span>访客中心</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/vistor/order">访客登记</a></li>
+
+                        <li ><a class="" href="/vistor/vistorList">访客记录</a></li>
+
+                        <li ><a class="" href="/vistor/dataStatistics">访客分析</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-globe"></i>
+                        <span>共享会议</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/sharingSet">分享设置</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-home"></i>
+                        <span>会议配置</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/roomType">会议室类型</a></li>
+
+                        <li ><a class="" href="/roomResources">资源列表</a></li>
+
+                        <li ><a class="" href="/rooms">会议室列表</a></li>
+
+                        <li ><a class="" href="/organization/site">园区/SITE</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-youtube-play"></i>
+                        <span>会议显示</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/display/terminal">终端列表</a></li>
+
+                        <li ><a class="" href="/system/terminaltemplate">终端模板</a></li>
+
+                        <li ><a class="" href="/display/mytemplate">我的模板</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-bullhorn"></i>
+                        <span>会议通知</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/organization/enterprise/notice">会议通知</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-signal"></i>
+                        <span>数据分析</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/report/sysreport/meetingSummaryMonthByRoom">会议室日汇总</a></li>
+
+                        <li ><a class="" href="/report/sysreport/meetingSummaryYearByRoom">会议室月汇总</a></li>
+
+                        <li ><a class="" href="/report/sysreport/meetingSummaryMonthByUserYear">员工预订分析</a></li>
+
+                        <li ><a class="" href="/report/sysreport/meetingSummaryMonthByDepartmentYear">部门预订分析</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-comments-o"></i>
+                        <span>接口管理</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/organization/enterprise/viewMyQyWeiXinConfig">微信</a></li>
+
+                        <li ><a class="" href="/organization/enterprise/viewMyDingTalkConfig">钉钉</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa icon-sitemap"></i>
+                        <span>组织管理</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/organization/enterprise/viewMyEnterprise">公司信息</a></li>
+
+                        <li ><a class="" href="/organization/department">部门列表</a></li>
+
+                        <li ><a class="" href="/organization/user">用户列表</a></li>
+
+                        <li ><a class="" href="/organization/newRequestJoin">用户转入</a></li>
+
+                        <li ><a class="" href="/organization/enterprise/transfer">用户转出</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="javascript:" class="">
+                        <i class="fa fa-gear"></i>
+                        <span>系统管理</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub">
+
+                        <li ><a class="" href="/profile">我的帐户</a></li>
+
+                        <li ><a class="" href="/profile/changepasswd">修改密码</a></li>
+
+                        <li ><a class="" href="/system/loginLogs">登录日志</a></li>
+
+                        <li ><a class="" href="/order/myOrder">我的订单</a></li>
+
+                        <li ><a class="" href="/order/all">全部订单</a></li>
+
+                    </ul>
+                </li>
+
+
+
+
+
+
+                <li><a class="" href="/logout">退出系统</a></li>
+
+
+
+            </ul>
+        </div>
+    </aside>
+
+
+
+
+    <section id="main-content">
+        <section class="wrapper">
+            <div class="alert alert-info fade in" style="display:none">
+                <button type="button" class="close close-sm" data-dismiss="alert">
+                    <i class="fa fa-times"></i>
+                </button>
+                系统提示：<br>
+                1.免费版，默认开通5间会议室的在线管理功能，5间以上及需要外接显示，请申请正式版，查看价格或在线申请<br>
+                2.快速预定，限当天会议的预定，点击图块即可预定<br>
+                3.购买并启用“会场检测模块”，绿色代表了会议室当前无人使用，红色代表正在使用
+
+            </div>
+
+
+
+
+
+
+            <!--state overview start-->
+            <div class="row state-overview">
+                <div class="col-lg-3 col-sm-6">
+                    <section class="panel">
+                        <div class="symbol terques">
+                            <i class="icon-user"></i>
+                        </div>
+                        <div class="value btn-link-quick-meeting">
+                            <a href="/meeting/quickbooking">
+                                <h1>5</h1>
+                                <p>当前空闲会议室</p>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <section class="panel">
+                        <div class="symbol red">
+                            <i class="icon-tags"></i>
+                        </div>
+                        <div class="value">
+                            <h1>0</h1>
+                            <p>正在召开会议</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <section class="panel">
+                        <div class="symbol yellow">
+                            <i class="icon-shopping-cart"></i>
+                        </div>
+                        <div class="value">
+                            <h1>0</h1>
+                            <p>电话会议室</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <section class="panel">
+                        <div class="symbol blue">
+                            <i class="icon-bar-chart"></i>
+                        </div>
+                        <div class="value">
+                            <h1>0</h1>
+                            <p>我的余额</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!--state overview end-->
+
+            <div class="row">
+
+                <div class="col-lg-7">
+
+                    <!--work progress start-->
+                    <section class="panel">
+                        <div class="panel-body  ">
+
+
+
+
+                            <a href="#" class="task-thumb">
+                                <img src="/static/img/hys-avatar.png" alt="">
+                            </a>
+
+                            <div class="task-thumb-details">
+                                <h1>所有会议室</h1>
+                                <p>All Meeting Room</p>
+                            </div>
+                            <div class="task-option">
+
+                            </div>
+                        </div>
+                        <table class="table table-hover personal-task"  >
+                            <tbody>
+
+
+                            <tr>
+                                <td nowrap  ><a href="/meeting/create?defRoomId=4449">新会议室-001</a></td>
+                                <td>
+
+
+                                    <span class='badge bg-info'>当前空闲</span>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td nowrap  ><a href="/meeting/create?defRoomId=4450">新会议室-002</a></td>
+                                <td>
+
+
+                                    <span class='badge bg-info'>当前空闲</span>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td nowrap  ><a href="/meeting/create?defRoomId=4451">新会议室-003</a></td>
+                                <td>
+
+
+                                    <span class='badge bg-info'>当前空闲</span>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td nowrap  ><a href="/meeting/create?defRoomId=4452">新会议室-004</a></td>
+                                <td>
+
+
+                                    <span class='badge bg-info'>当前空闲</span>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td nowrap  ><a href="/meeting/create?defRoomId=4453">新会议室-005</a></td>
+                                <td>
+
+
+                                    <span class='badge bg-info'>当前空闲</span>
+
+                                </td>
+                            </tr>
+
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                    </section>
+                    <!--work progress end-->
+                </div>
+                <div class="col-lg-5">
+                    <!--user info table start-->
+                    <section class="panel">
+                        <div class="panel-body">
+                            <a href="#" class="task-thumb">
+                                <img class="headerImage" style="height:75px;width:75px;" src="null"  alt="">
+                            </a>
+                            <div class="task-thumb-details">
+                                <h1><a href="#">侯晓妍</a></h1>
+                                <p>今日会议</p>
+                            </div>
+                        </div>
+                        <table class="table table-hover personal-task"  >
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </section>
+                    <!--user info table end-->
+                </div>
+
+            </div>
+
+
+
+            <script type="text/javascript">
+                <!--
+
+                function initPageScript(){
+
+
+                }
+
+                //-->
+            </script>
+
+
+        </section>
+    </section>
+</section>
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="js/new/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/new/bootstrapValidator.js"></script>
+<script src="js/new/jquery-editable-select.js"></script>
+<script src="js/new/jquery.scrollTo.min.js"></script>
+<script src="js/new/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="js/new/jquery.sparkline.js" type="text/javascript"></script>
+<script src="js/new/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/new/jquery.ui.touch-punch.min.js"></script>
+<script src="js/new/jquery.validate.min.js"></script>
+<script src="js/new/city-picker.data.js"></script>
+<script src="js/new/city-picker.js"></script>
+
+<script type="text/javascript" src="/static/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="/static/assets/fancybox/source/jquery.fancybox.js"></script>
+<script type="text/javascript" src="/static/assets/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+
+<script type="text/javascript" src="/static/assets/toastr-master/toastr.js"></script>
+
+
+<script type="text/javascript" src="/static/assets/fuelux/js/spinner.min.js"></script>
+
+
+<script type="text/javascript" src="js/slidebars.min.js"></script>
+<script src="/static/assets/switch/js/bootstrap-switch.min.js"></script>
+
+<!--common script for all pages-->
+<script src="js/new/common-scripts.js"></script>
+<!--script for this page-->
+<script type="text/javascript" charset="utf-8" src="/static/master.js?rm=1551356587066" charset="utf-8" type="text/javascript"></script>
+<script src="/static/jquery.mousewheel.min.js"></script>
+<script src="js/new/jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="/static/dropzone/dropzone.min.js"></script>
+
+<script src="js/new/modernizr.custom.js"></script>
+
+
+<script src="/static/assets/morris.js-0.4.3/morris.min.js" type="text/javascript"></script>
+<script src="/static/assets/morris.js-0.4.3/raphael-min.js" type="text/javascript"></script>
+
+<script src="/static/assets/flot/jquery.flot.js"></script>
+<script src="/static/assets/flot/jquery.flot.resize.js"></script>
+<script src="/static/assets/flot/jquery.flot.pie.js"></script>
+<script src="/static/assets/flot/jquery.flot.stack.js"></script>
+<script src="/static/assets/flot/jquery.flot.crosshair.js"></script>
+
+<script src="js/new/jquery.tagsinput.js"></script>
+<script type="text/javascript" src="/static/assets/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="js/new/jquery.md5.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+
+
+        initPageScript();
+        toResetHeadImage();
+        resetHeadImageSrc('');
+    });
+
+    function remindAndQuickSetting(){
+        //openDialog2("初始化",1024,600,"/quickSetting/list",false);
+    }
+</script>
+</body>
+
+</html>

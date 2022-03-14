@@ -1,0 +1,180 @@
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: couriernew, courier, monospace;
+}
+
+small {
+    font-size: 12px;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+legend {
+   color: #000;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*å®šä¹‰æ»šåŠ¨æ¡é«˜å®½åŠèƒŒæ™¯ é«˜å®½åˆ†åˆ«å¯¹åº”æ¨ªç«–æ»šåŠ¨æ¡çš„å°ºå¯¸*/
+::-webkit-scrollbar
+{
+    width: 8px;
+    height: 16px;
+    background-color: #F5F5F5;
+}
+
+/*å®šä¹‰æ»šåŠ¨æ¡è½¨é“ å†…é˜´å½±+åœ†è§’*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*å®šä¹‰æ»‘å— å†…é˜´å½±+åœ†è§’*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.content{
+    height: 100%;
+    background: #eee;
+
+}
+
+.chart_shell{
+    display: inline-block;
+    width: 23%;
+    height: 45%;
+    box-shadow: -10px 0px 15px #034c6a inset, 0px -10px 15px #034c6a inset, 10px 0px 15px #034c6a inset,0px 10px 15px #034c6a inset;
+    border: 1px solid #034c6a;
+    box-sizing: border-box;
+    margin: 0 1%;
+    position: relative;
+    margin-top: 2%;
+    background: #fafafa;
+}
+
+.chart_title{
+    text-align: center;
+    background-color: #034c6a;
+    border-radius: 18px;
+    color: #ffffff;
+    width: 60%;
+    position: absolute;
+    top: -15px;
+    left: 20%;
+    padding: 8px;
+    font-weight: bold;
+
+}
+
+.p_chart{
+    height: 100%;
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 15px;
+    overflow: hidden;
+}

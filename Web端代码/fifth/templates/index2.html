@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Material Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+
+<body>
+<div class="body-wrapper">
+    <!-- partial:partials/_sidebar.html -->
+    <aside class="mdc-persistent-drawer mdc-persistent-drawer--open">
+        <nav class="mdc-persistent-drawer__drawer">
+            <div class="mdc-persistent-drawer__toolbar-spacer">
+                <a href="index2.html" class="brand-logo">
+                    <img src="images/1-1.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="mdc-list-group">
+                <nav class="mdc-list mdc-drawer-menu">
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="index2.html">
+                            <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">desktop_mac</i>
+                            Dashboard
+                        </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="pages/forms/basic-forms.html">
+                            <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
+                            Forms
+                        </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="ui-sub-menu">
+                        <a class="mdc-drawer-link" href="#">
+                            <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
+                            UI Features
+                            <i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+                        </a>
+                        <div class="mdc-expansion-panel" id="ui-sub-menu">
+                            <nav class="mdc-list mdc-drawer-submenu">
+                                <div class="mdc-list-item mdc-drawer-item">
+                                    <a class="mdc-drawer-link" href="pages/ui-features/buttons.html">
+                                        Buttons
+                                    </a>
+                                </div>
+                                <div class="mdc-list-item mdc-drawer-item">
+                                    <a class="mdc-drawer-link" href="pages/ui-features/typography.html">
+                                        Typography
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="pages/ui-features/tables.html">
+                            <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
+                            Tables
+                        </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item">
+                        <a class="mdc-drawer-link" href="pages/charts/chartjs.html">
+                            <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
+                            Charts
+                        </a>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item" href="#" data-toggle="expansionPanel" target-panel="sample-page-submenu">
+                        <a class="mdc-drawer-link" href="#">
+                            <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
+                            Sample Pages
+                            <i class="mdc-drawer-arrow material-icons">arrow_drop_down</i>
+                        </a>
+                        <div class="mdc-expansion-panel" id="sample-page-submenu">
+                            <nav class="mdc-list mdc-drawer-submenu">
+                                <div class="mdc-list-item mdc-drawer-item">
+                                    <a class="mdc-drawer-link" href="pages/samples/blank-page.html">
+                                        Blank Page
+                                    </a>
+                                </div>
+                                <div class="mdc-list-item mdc-drawer-item">
+                                    <a class="mdc-drawer-link" href="pages/samples/403.html">
+                                        403
+                                    </a>
+                                </div>
+                                <div class="mdc-list-item mdc-drawer-item">
+                                    <a class="mdc-drawer-link" href="pages/samples/404.html">
+                                        404
+                                    </a>
+                                </div>
+                                <div class="mdc-list-item mdc-drawer-item">
+                                    <a class="mdc-drawer-link" href="pages/samples/500.html">
+                                        500
+                                    </a>
+                                </div>
+                                <div class="mdc-list-item mdc-drawer-item">
+                                    <a class="mdc-drawer-link" href="pages/samples/505.html">
+                                        505
+                                    </a>
+                                </div>
+                                <div class="mdc-list-item mdc-drawer-item">
+                                    <a class="mdc-drawer-link" href="pages/samples/login.html">
+                                        Login
+                                    </a>
+                                </div>
+                                <div class="mdc-list-item mdc-drawer-item">
+                                    <a class="mdc-drawer-link" href="pages/samples/register.html">
+                                        Register
+                                    </a>
+                                </div>
+
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="mdc-list-item mdc-drawer-item purchase-link">
+                        <a href=" #themes/free-material-admin-template/" target="_blank" class="mdc-button mdc-button--raised mdc-button--dense mdc-drawer-link" data-mdc-auto-init="MDCRipple">
+                            Upgrade To Pro
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+    </aside>
+    <!-- partial -->
+    <!-- partial:partials/_navbar.html -->
+    <header class="mdc-toolbar mdc-elevation--z4 mdc-toolbar--fixed">
+        <div class="mdc-toolbar__row">
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                <a href="#" class="menu-toggler material-icons mdc-toolbar__menu-icon">menu</a>
+                <span class="mdc-toolbar__input">
+            <div class="mdc-text-field">
+              <input type="text" class="mdc-text-field__input" id="css-only-text-field-box" placeholder="Search anything...">
+            </div>
+          </span>
+            </section>
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+                <div class="mdc-menu-anchor">
+                    <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="notification-menu" data-mdc-auto-init="MDCRipple">
+                        <i class="material-icons">notifications</i>
+                        <span class="dropdown-count">3</span>
+                    </a>
+                    <div class="mdc-simple-menu mdc-simple-menu--right" tabindex="-1" id="notification-menu">
+                        <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+                            <li class="mdc-list-item" role="menuitem" tabindex="0">
+                                <i class="material-icons mdc-theme--primary mr-1">email</i>
+                                One unread message
+                            </li>
+                            <li class="mdc-list-item" role="menuitem" tabindex="0">
+                                <i class="material-icons mdc-theme--primary mr-1">group</i>
+                                One event coming up
+                            </li>
+                            <li class="mdc-list-item" role="menuitem" tabindex="0">
+                                <i class="material-icons mdc-theme--primary mr-1">cake</i>
+                                It's Aleena's birthday!
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mdc-menu-anchor">
+                    <a href="#" class="mdc-toolbar__icon mdc-ripple-surface" data-mdc-auto-init="MDCRipple">
+                        <i class="material-icons">widgets</i>
+                    </a>
+                </div>
+                <div class="mdc-menu-anchor mr-1">
+                    <a href="#" class="mdc-toolbar__icon toggle mdc-ripple-surface" data-toggle="dropdown" toggle-dropdown="logout-menu" data-mdc-auto-init="MDCRipple">
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                    <div class="mdc-simple-menu mdc-simple-menu--right" tabindex="-1" id="logout-menu">
+                        <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+                            <li class="mdc-list-item" role="menuitem" tabindex="0">
+                                <i class="material-icons mdc-theme--primary mr-1">settings</i>
+                                Settings
+                            </li>
+                            <li class="mdc-list-item" role="menuitem" tabindex="0">
+                                <i class="material-icons mdc-theme--primary mr-1">power_settings_new</i>
+                                Logout
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <!-- partial -->
+    <div class="page-wrapper mdc-toolbar-fixed-adjust">
+        <main class="content-wrapper">
+            <div class="mdc-layout-grid">
+                <div class="mdc-layout-grid__inner">
+                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                        <div class="mdc-card">
+                            <div class="mdc-layout-grid__inner">
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-7">
+                                    <section class="purchase__card_section">
+                                        <p>Like what you see? Check out our premium version for more.</p>
+                                    </section>
+                                </div>
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-5">
+                                    <section class="purchase__card_section d-flex align-item-center">
+                                        <a href=" #themes/free-material-admin-template/" target="_blank" class="mdc-button mdc-button--stroked mdc-button--dense" data-mdc-auto-init="MDCRipple">
+                                            download free version
+                                        </a>
+                                        <a href=" #themes/free-material-admin-template/" target="_blank" class="mdc-button mdc-button--raised mdc-button--dense" data-mdc-auto-init="MDCRipple">
+                                            purchase
+                                        </a>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8">
+                        <div class="mdc-layout-grid__inner">
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                                <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                                    <div class="mdc--tile mdc--tile-danger rounded">
+                                        <i class="mdi mdi-account-settings text-white icon-md"></i>
+                                    </div>
+                                    <div class="text-wrapper pl-1">
+                                        <h3 class="mdc-typography--display1 font-weight-bold mb-1">7459</h3>
+                                        <p class="font-weight-normal mb-0 mt-0">New projects</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                                <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                                    <div class="mdc--tile mdc--tile-success rounded">
+                                        <i class="mdi mdi-basket text-white icon-md"></i>
+                                    </div>
+                                    <div class="text-wrapper pl-1">
+                                        <h3 class="mdc-typography--display1 font-weight-bold mb-1">$7783</h3>
+                                        <p class="font-weight-normal mb-0 mt-0">Total Sales</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                                <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                                    <div class="mdc--tile mdc--tile-warning rounded">
+                                        <i class="mdi mdi-ticket text-white icon-md"></i>
+                                    </div>
+                                    <div class="text-wrapper pl-1">
+                                        <h3 class="mdc-typography--display1 font-weight-bold mb-1">569</h3>
+                                        <p class="font-weight-normal mb-0 mt-0">Open Tickets</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
+                                <div class="mdc-card py-3 pl-2 d-flex flex-row align-item-center">
+                                    <div class="mdc--tile mdc--tile-primary rounded">
+                                        <i class="mdi mdi-account-star text-white icon-md"></i>
+                                    </div>
+                                    <div class="text-wrapper pl-1">
+                                        <h3 class="mdc-typography--display1 font-weight-bold mb-1">5785</h3>
+                                        <p class="font-weight-normal mb-0 mt-0">New Visitors</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card d-flex flex-column">
+                            <div class="mdc-layout-grid__inner flex-grow-1">
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3"></div>
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6 d-flex align-item-center flex-column">
+                                    <h2 class="mdc-card__title mdc-card__title--large text-center mt-2 mb-2">Time, Practice</h2>
+                                    <div id="currentBalanceCircle" class="w-100" ></div>
+                                </div>
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3"></div>
+                            </div>
+                            <div class="mdc-layout-grid__inner">
+                                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                                    <section class="mdc-card__action-footer mt-4 bg-red w-100">
+                                        <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
+                                            <i class="mdi mdi-store icon-md"></i>
+                                        </div>
+                                        <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
+                                            <i class="mdi mdi-phone-plus icon-md"></i>
+                                        </div>
+                                        <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
+                                            <i class="mdi mdi-share-variant icon-md"></i>
+                                        </div>
+                                        <div class="col mdc-button" data-mdc-auto-init="MDCRipple">
+                                            <i class="mdi mdi-autorenew icon-md"></i>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+                        <div class="mdc-card card--with-avatar">
+                            <section class="mdc-card__primary">
+                                <div class="card__avatar"><img src="images/faces/face1.jpg" alt=""></div>
+                                <h1 class="mdc-card__title">Daniel Russel</h1>
+                                <h2 class="mdc-card__subtitle">@danielrussel</h2>
+                                <span class="social__icon-badge mdc-twitter mdi mdi-twitter"></span>
+                            </section>
+                            <section class="mdc-card__supporting-text pt-1">
+                                <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum sem non mauris euismod hendrerit.Aliquam condimentum sem non mauris euismod hendrerit.</p>
+                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum.</p>
+                            </section>
+                            <section class="mdc-card__social-footer bg-blue">
+                                <div class="col">
+                                    <small>TWEETS</small>
+                                    <p>768.8k</p>
+                                </div>
+                                <div class="col">
+                                    <small>FOLLOWING</small>
+                                    <p>186.8k</p>
+                                </div>
+                                <div class="col">
+                                    <small>FOLLOWING</small>
+                                    <p>25.8k</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+<!-- body wrapper -->
+<!-- plugins:js -->
+<script src="js/material-components-web.min.js"></script>
+<script src="js/jquery.min1.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page-->
+<script src="js/Chart.min1.js"></script>
+<script src="js/progressbar.min.js"></script>
+<!-- End plugin js for this page-->
+<!-- inject:js -->
+<script src="js/misc.js"></script>
+<script src="js/material.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page-->
+<script src="js/dashboard.js"></script>
+<!-- End custom js for this page-->
+</body>
+
+</html>

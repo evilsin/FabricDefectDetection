@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>功能展示</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/static/css/animate.css">
+
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/static/css/icomoon.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="/static/css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="/static/js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<div id="left_nav_tourizz" style="height: 540px; ">
+    <div class="fh5co-hero"style="background-image:url({% static 'images/th1.jpg'%});" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><font style="font-family:开题" >原始图片</font></h1>
+                    <ul class="fh5co-check">
+                        <div>
+                            <img src="/static/media/images/test.jpg" alt="" width="450" height="300">
+                        </div>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h1><font style="font-family:开题">阈值调节</font></h1>
+                    <ul class="fh5co-check">
+                        <div>
+                            <form action="show.html" method="post" >
+                                <select name="select" style="width:100px">
+                                    <option value="single">单分类         </option>
+                                    <option value="multiple">多分类         </option>
+                                </select>
+                                <font color="black" style="font-family:开题 " size="5"><input type="submit" value = "确定" /></font>
+                                <font color="black" style="font-family:开题 " size="5"><a href="new5.html"><input type="button" value="返回" style="color: black"/></a></font>
+                                <!--<font color="black" style="font-family:开题 " size="5"><button onclick="window.location.href='new5.html'">返回</button></font>-->
+
+                                <!--<div class="inner">
+
+                                    <div class="problem">-->
+                                        <!--<font color="black" style="font-family:开题 " size="5">-->
+                                        <!--<div class="col-md-4">-->
+                                            <!--<h2><font style="font-family:开题" >选择待识别图片</font></h2>-->
+                                            <!--<ul class="fh5co-check">
+                                                <font color="black" style="font-family:开题 " size="5">
+                                                    <a href="show.html"><button>分析</button></a>
+                                                </font>
+                                            </ul>-->
+                                        <!--</div>
+                                    </div>
+                                </div>-->
+
+
+
+                                 <table>
+								<tr>
+									<td><font color="black"style="font-family:开题 " size="5">面积阈值:</font>
+                                        <input type='number' name="a" placeholder="默认为900" width="10%"/>
+                                    </td>
+								</tr>
+								<tr>
+                                    <td><font color="black"style="font-family:开题 " size="5">滤波孔径:</font>
+                                        <input type='number' name="b" placeholder="默认为5，可选择3,5,7" width="10%"/>
+                                    </td>
+								</tr>
+							</table>
+                                <font color="black"style="font-family:华文新魏 " size="5">检测结果:{{ result }}</font>
+                            </form>
+                        </div>
+
+                            <img src="/static/fenlei/result/result.jpg" alt="" width="450" height="300">
+
+                    </ul>
+                </div>
+                <!--<div class="col-md-1">
+                    <ul>
+                        <div>
+                            <button onclick="window.location.href='uploadimg.html'">返回</button>
+                        </div>
+                    </ul>
+
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

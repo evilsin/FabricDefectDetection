@@ -1,0 +1,428 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,"微软雅黑",Arial,sans-serif;
+}
+
+@keyframes fade-in {
+    0%   {opacity: 0;} /*初始状态 透明度为0*/
+    40%  {opacity: 0;} /*过渡状态 透明度为0*/
+    100% {opacity: 0.8;} /*结束状态 透明度为1*/
+}
+@-webkit-keyframes fade-in {/*针对webkit内核*/
+    0%   {opacity: 0;}
+    40%  {opacity: 0;}
+    100% {opacity: 0.8;}
+}
+
+.Dc-tab .panel-heading {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.Dc-tab .panel-body {
+    padding: 15px 0;
+}
+.Dc-tab ul.nav.nav-tabs {
+    padding: 0 15px;
+}
+.Dc-tab ul.nav.nav-tabs li {
+    margin: 30px 15px;
+    border: 2px solid #ddd;
+}
+.Dc-tab ul.nav.nav-tabs li.active {
+    background: #fff;
+    border: 2px solid #FCB322;
+}
+.Dc-tab ul.nav.nav-tabs li a {
+    width: 74px;
+    padding: 0;
+    font-size: 4em;
+    color: inherit;
+    text-align: center;
+}
+.weekend {
+    color: #fff;
+// background: #FCB322;
+    background: #6883a3;
+}
+.calendar table.month tr td.disabled,
+.calendar table.month tr td.disabled:hover {
+    color: #50526E!important;
+    background: #3E3F53;
+}
+.calendar .months-container {
+    border: 1px solid #ddd;
+    border-right: 0;
+    border-bottom: 0;
+    overflow: hidden;
+}
+.calendar .month-container {
+    height: 220px;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+   .thumbStyle .listStyleBtn {
+       display: inline-block;
+       margin-left: 30px;
+   }
+.thumbStyle.on table thead {
+    display: none!important;
+}
+.thumbStyle.on table tr {
+    float: left;
+    display: block;
+    padding: 15px;
+    background: #fff!important;
+    border: 0!important;
+}
+.thumbStyle.on table tr td {
+    display: block;
+    text-align: center;
+    background: #F1F2F7;
+    border: 0;
+}
+.thumbStyle.on table tr td.hidden-phone  {
+    display: none;
+}
+.thumbStyle.on table tbody {
+    border-bottom: 1px solid #ddd;
+}
+.thumbStyle.on table tbody tr .follower small {
+    display: block;
+    margin-top: 10px;
+}
+.thumbStyle.on table tbody tr td:last-child {
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+}
+@media (max-width: 320px) {
+    .thumbStyle.on table tr {
+        width: 100%;
+    }
+}
+
+
+
+
+
+#addImg input[type=file],
+#addVideo input[type=file] {
+    margin: 6px;
+}
+
+
+.syn li {
+    margin: 10px 0;
+}
+.syn li img {
+    width: 100%;
+    border-radius: 5px;
+}
+.approve li {
+    height: 100px;
+    line-height: 100px;
+    margin: 10px 0;
+}
+.approve li a {
+    display: block;
+    font-size: 1.8em;
+}
+
+
+.meetingRoomName {
+    display: inline-block;
+    margin-top: 30px;
+    width: 170px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 1.6em;
+    color: #fff;
+    background: #0099b8;
+    border-radius: 6px;
+}
+.chartBox {
+    padding: 5% 0;
+    text-align: center;
+}
+.chartBox > div.inner {
+    position: relative;
+}
+
+.chartBox > div.inner #myclock {
+    display: none;
+    text-align: center;
+}
+.chartBox > div.inner #myclock canvas {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+// background-color: #673AB7;
+}
+
+.chartBox > div.inner #doughnut {
+    position: relative;
+    z-index: 1;
+}
+
+#chartjs-tooltip {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, .7);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 3px;
+    -webkit-transition: all .1s ease;
+    transition: all .1s ease;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+#man_calendar {
+    position: relative;
+}
+#man_calendar .timeLine {
+    position: absolute;
+    top: 0%;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: blue;
+}
+table#calendar {
+    width: 100%!important;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table#calendar thead tr th {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd;;
+    vertical-align: top;
+    width: 12.5%;
+    padding: 2px;
+    background: #f9f9f9;
+}
+table#calendar thead tr th:first-child {
+    width: 50px;
+}
+table#calendar thead tr th > div {
+// width: 60px;
+    text-align: center;
+}
+
+table#calendar td:hover {
+    background: #FFF5F5;
+}
+
+table#calendar #timehead_val {
+    vertical-align: top;
+    border-bottom: 1px dotted #ddd;
+    border-right: 1px solid #ddd;
+    height: 15px;
+}
+
+table#calendar #timehead_val_bottom {
+    vertical-align: top;
+    text-align: center;
+    border-left: 1px dotted #ddd;
+    border-bottom: 2px solid #ddd;
+    border-right: 1px solid #ddd;
+    height: 15px;
+}
+
+table#calendar .selected {
+    background-color: #FF9900;
+    background-color: rgba(245, 245, 245, 0.75);
+}
+
+table#calendar #timehead {
+    vertical-align: top;
+    text-align: right;
+    border: 1px solid #ddd;
+    border-bottom-width: 2px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+div.dxpiredhy {
+    position: absolute;
+    height: 193px;
+    overflow: hidden;
+    background-color: #FFC268;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+
+    animation: fade-in;             /*动画名称*/
+    animation-duration: 2s;       /*动画持续时间*/
+    -webkit-animation: fade-in 2s; /*针对webkit内核*/
+}
+div.dxpiredhy > div {
+    padding: 10px;
+}
+#color_key {
+    margin-bottom: 15px;
+    text-align: right;
+}
+#color_key span {
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+#color_key span.currhy {
+    background-color: #FFAAAA;
+}
+#color_key span.dxpiredhy {
+    background-color: #FFC268;
+}
+
+#color_key span.reachedhy {
+    background-color: #BBE1FD;
+}
+
+#color_key span.reachedhyTentative {
+    background-color: #95ff95;
+}
+
+.currhyTitle {
+    background-color: #FF8080;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 2px;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.dxpiredhyTitle {
+    background-color: #FF9F11;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 10px;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.reachedhyTitle {
+    background-color: #6ABDFB;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 2px;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.reachedhyTitleTentative {
+    background-color: #00cc00;
+    color: #ff0000;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 2px;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+
+div.checkin1 a {
+    color: #ffffff;
+}
+
+div.checkin1 {
+    background: #009900;
+}
+
+.calendarHeader {
+    width: 100px;
+}
+
+.Dc-tab-0 .tab-content {
+    padding: 20px;
+}
+
+/*  时间段刻度  */
+.sliders {
+    padding-top: 20px;
+}
+.slider-scale {
+    position: relative;
+    height: 24px;
+    top: 10px;
+}
+.slider-scale span {
+    position: absolute;
+    height: 5px;
+    border-left: 1px solid #999;
+    font-size: 0;
+}
+.slider-scale ins { font-size: 9px;
+    text-decoration: none;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    color: #999;
+}
+
+.ui-slider-handle > i {
+    display: block;
+    margin-top: -1.5em;
+    text-align: center;
+    color: #797979;
+    font-weight: normal;
+}
+
+
+
+
+.dataTable tfoot input,
+.dataTable tfoot select {
+    height: 34px;
+    line-height: 1.42857143;
+    padding: 6px 12px;
+    color: #c2c2c2;
+    font-size: 14px;
+    font-weight: normal !important;
+    border: 1px solid #e2e2e4;
+    border-radius: 4px;
+}
+.wrapper-from{
+    display: inline-block;
+    margin-top: 60px;
+    width: 100%;
+}
+.wrapper-from .from-panel-heading{
+    background: #ffffff;
+    padding: 10px 15px;
+    margin-bottom:5px;
+}
+
+.checkboxes label, .radios label {
+    display: block;
+    cursor: pointer;
+    line-height: 20px;
+    padding-bottom: 7px;
+    font-weight: 300;
+}
+
+span.required{
+    color:#ff0000;
+}
+

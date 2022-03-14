@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <title>个人资料</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/static/css/templatemo_main.css">
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-reset.css" rel="stylesheet">
+
+    <link href="/static/css/font-awesome.css" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+
+</head>
+<body class="has-js">
+<section id="container" class="">
+    <!--header start-->
+    <header class="header white-bg">
+        <div class="sidebar-toggle-box">
+            <div data-original-title="展开菜单" data-placement="right" class="icon-reorder tooltips"></div>
+        </div>
+        <!--logo start-->
+        <a href="#" class="logo"><span><b>慧眼</b></span></a>
+        <!--logo end-->
+
+        <div class="nav notify-row" id="top_menu">
+
+        </div>
+        <div class="top-nav ">
+            <!--search & user info start-->
+            <ul class="nav pull-right top-menu">
+
+                <!-- user login dropdown start登录用户个人下拉框-->
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                        <img class="headerImage" style="height:30px;width:30px;" src="/static/imgs/hh.png">
+
+
+                        <span class="username">FTD</span>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu extended logout">
+                        <div class="log-arrow-up"></div>
+                        <li><a href=""><i class=" icon-envelope"></i>账号</a></li>
+                        <li><a href=""><i class="icon-key"></i> 密码</a></li>
+                        <li style="display:none"><a href=""><i class="icon-user"></i> 头像</a></li>
+                        <li><a href=""><i class="icon-signout"></i> 退出</a></li>
+                    </ul>
+                </li>
+                <!-- user login dropdown end -->
+            </ul>
+            <!--search & user info end-->
+        </div>
+
+    </header>
+
+    <aside>
+        <div id="sidebar" class="nav-collapse">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu ">
+                <li class="sub-menu active">
+                    <a class="active" href="index.html">
+                        <i class="icon-laptop"></i>
+                        <span>首&nbsp;&nbsp;&nbsp;&nbsp;页</span>
+                    </a>
+                </li>
+                <li class="sub-menu ">
+                    <a href="shibie.html" class="">
+                        <i class="fa fa-user"></i>
+                        <span>布匹瑕疵识别</span>
+                        <!--<span class="arrow"></span>-->
+                    </a>
+                    <!--<ul class="sub">-->
+
+                    <!--<li ><a class="" href="today.html">今日会议</a></li>-->
+
+                    <!--</ul>-->
+                </li>
+                <li class="sub-menu ">
+                    <a href="label.html" class="">
+                        <i class="fa fa-bank"></i>
+                        <span>在线布匹标记</span>
+                    </a>
+                </li>
+                <li class="sub-menu ">
+                    <a href="bigdata.html" class="">
+                        <i class="fa fa-bank"></i>
+                        <span>大数据分析</span>
+                    </a>
+                </li>
+                <li class="sub-menu ">
+                    <a href="causes.html" class="">
+                        <i class="fa fa-desktop"></i>
+                        <span>成因追踪</span>
+                    </a>
+                </li>
+
+                <li class="sub-menu ">
+                    <a href="information.html" class="">
+                        <i class="fa fa-user"></i>
+                        <span>个人资料</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:" data-toggle="modal" data-target="#confirmModal">
+                        <i class="fa fa-sign-out"></i><span>退出系统</span></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <section id="main-content" class="">
+        <section class="wrapper">
+            <div id="main-wrapper">
+                <div class="template-page-wrapper">
+                    <div class="navbar-collapse collapse templatemo-sidebar">
+                    </div><!--/.navbar-collapse -->
+
+                    <div class="templatemo-content-wrapper">
+                        <div class="templatemo-content1">
+                            <!--<ol class="breadcrumb">
+                              <li><a href="index.html">Admin Panel</a></li>
+                              <li><a href="#">Preferences</a></li>
+                              <li class="active">Form Controls</li>
+                            </ol>-->
+                            <h1>个人资料</h1>
+                            <i><p class="margin-bottom-15">请完善您的个人资料</p></i>
+                            <div class="has-success has-feedback">
+                                <div class="row">
+                                    <div class="col-md-12 margin-bottom-15">
+                                        <label class="control-label" for="inputSuccess">照片</label>
+                                        <img class="form-control1" id="inputSuccess" src="/static/imgs/hy.png">
+                                        <!--<span class="fa fa-check form-control-feedback"></span>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 margin-bottom-15">
+                                    <label for="firstName" class="control-label">姓名</label>
+                                    <input type="text" class="form-control" id="firstName" value="FTD">
+                                </div>
+
+                                <div class="col-md-6 margin-bottom-15">
+                                    <label for="lastName" class="control-label">工号</label>
+                                    <input type="text" class="form-control" id="lastName" value="10015066">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 margin-bottom-15">
+                                    <label for="currentPassword">密码</label>
+                                    <input type="password" class="form-control" id="currentPassword" value="********"
+                                           disabled>
+                                </div>
+
+                                <div class="col-md-6 margin-bottom-15">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 margin-bottom-15">
+                                    <label for="password_1">请输入新密码</label>
+                                    <input type="password" class="form-control" id="password_1"
+                                           placeholder="New Password">
+
+                                </div>
+
+                                <div class="col-md-6 margin-bottom-15">
+                                    <label for="password_2">请确认密码</label>
+                                    <input type="password" class="form-control" id="password_2"
+                                           placeholder="Confirm New Password">
+                                </div>
+                            </div>
+
+                            <div class="has-success has-feedback">
+                                <div class="row">
+                                    <div class="col-md-12 margin-bottom-15">
+                                        <button type="button" class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only btnUp">
+                                            <span class="am-icon-trash-o">提交</span>
+                                        </button>
+                                        <p class="hidden" id="tips1">密码不一致</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer class="templatemo-footer">
+            <div class="templatemo-copyright">
+                <p>慧眼-纺织布匹表面瑕疵识别系统 </p>
+            </div>
+        </footer>
+    </section>
+    >
+
+    <!-- Modal -->
+    <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">您确认退出吗？</h4>
+                </div>
+                <div class="modal-footer">
+                    <a href="login.html" class="btn btn-primary">是</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">否</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/templatemo_script.js"></script>
+
+    <!--common script for all pages-->
+    <script src="/static/js/new/common-scripts.js"></script>
+
+    <script>
+        var Pwd1 = document.getElementById("password_1");
+        var Pwd2 = document.getElementById("password_2");
+
+        $(function() {
+            $(".btnUp").click(function() {
+                if(Pwd1.value!==Pwd2.value){
+                    alert("两次密码不一致，请重新输入！");
+                    Pwd1.value="";
+                    Pwd2.value="";
+                }
+                else if(Pwd1.value===""||Pwd2.value===""){
+                    alert("有密码为空！");
+                }
+                else{
+                    alert("提交成功");
+                    Pwd1.value="";
+                    Pwd2.value="";
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="/static/myplugs/js/plugs.js"></script>
+</section>
+</body>
+</html>

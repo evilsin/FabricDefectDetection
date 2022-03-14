@@ -1,0 +1,61 @@
+﻿.navbar-form{padding:10px 12px;}
+.leftDiv{
+	position:relative;
+	width:100%;
+	height: auto;
+	padding-bottom: 80px;
+}
+.leftDiv .layui-container{
+	position:relative;
+	top:40px;
+	left:0;
+	right: 0;
+	padding: 15px;
+	margin: auto;
+}
+.leftDiv .layui-container #test-n2{
+    width:100% !important;
+}
+.leftDiv .layui-container #test-n2 #layui-laydate1{
+    width:100% ;
+}
+.leftDiv .layui-container #test-n2 #layui-laydate1 .layui-laydate-main{
+    width:100% !important;
+}
+.leftDiv .layui-container #test-n2 table{
+    width:100% !important;
+}
+.text_box{
+	margin:20px;
+	padding-top:20px;
+	border:1px solid #eee;
+}
+.layui-form-label{
+	width:140px;
+	padding: 9px 0 ;
+	text-align: center;
+}
+.layui-input-block{
+	width: 280px;
+	margin-left: 150px;
+}
+.text_box input[type='radio']{
+	display: inline-block;
+	margin:10px 4px 0 12px;
+}
+.text_box select{
+	display: block;
+	width:100%;
+	height: 38px;
+	line-height: 1.3;
+	border:1px solid #e6e6e6;
+}
+.laydate-day-mark::after{
+	display: none;
+}
+/*.layui-laydate-content td, .layui-laydate-content th{
+	height: 54px;
+}*/
+/*.layui-laydate .layui-this{
+	background-color: #00aaee !important;
+}*/
